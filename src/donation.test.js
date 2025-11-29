@@ -1,8 +1,8 @@
 import { describe, it } from "node:test";
-import { onSubmit } from "./onsubmit.js";
+import { onSubmit } from "./donation.js";
 import assert from "node:assert";
 
-describe(" Onsubmit function", () => {
+describe("When onSubmit is invoked for Donation", () => {
   it("when you pass a string value for 0", () => {
     const val = onSubmit("0");
     assert.strictEqual(val, "No donation, no problem");
