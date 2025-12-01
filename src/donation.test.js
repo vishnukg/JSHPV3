@@ -1,6 +1,5 @@
-import { describe, it } from "node:test";
+import { describe, it, assert } from "vitest";
 import { onSubmit } from "./donation.js";
-import assert from "node:assert";
 
 describe("When onSubmit is invoked for Donation", () => {
   it("when you pass a string value for 0", () => {
