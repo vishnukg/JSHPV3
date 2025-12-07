@@ -1,4 +1,4 @@
-export const onSubmit = (donation) => {
+export const onSubmission = (donation) => {
   if (donation === "") {
     return "Want to donate?";
   }
