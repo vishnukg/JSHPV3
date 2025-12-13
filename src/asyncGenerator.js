@@ -10,3 +10,4 @@ const returnNextElement = createFlow();
 const futureData = returnNextElement.next().value;
 
 futureData.then(doWhenDataReceived);
+console.log("Final print");
