@@ -1,9 +1,10 @@
 function doWhenDataReceived(value) {
-  returnNextElement.next(value);
+  console.log(returnNextElement.next(value));
+  console.log(returnNextElement.next());
 }
 function* createFlow() {
   const data = yield fetch("https://www.google.com");
-  console.log(data.status);
+  yield data.status;
 }
 
 const returnNextElement = createFlow();
